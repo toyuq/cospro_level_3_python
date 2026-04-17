@@ -10,7 +10,7 @@ COS Pro 3급 - 문제 8: 배열에서 인접 원소의 차 출력
 
 
 [입출력 예]
-  입력: 4개 숫자 → 1, 3, 6, 2
+  입력: 4개 숫자 → 1 3 6 2
   출력:
     -2   (1 - 3)
     -3   (3 - 6)
@@ -26,10 +26,8 @@ COS Pro 3급 - 문제 8: 배열에서 인접 원소의 차 출력
 n = int(input())    # 배열의 길이 입력
 
 # 숫자를 하나씩 입력받아 배열 만들기
-arr = []                        # 빈 배열 만들기
-for i in range(n):              # n번 반복
-    x = int(input())            # 숫자 하나 입력
-    arr.append(x)               # 배열 끝에 추가
+arr = []
+arr = input().split()
 
 # 앞 숫자 - 뒷 숫자를 차례로 출력
 # 예: [1, 3, 6, 2]
@@ -37,4 +35,4 @@ for i in range(n):              # n번 반복
 #   arr[1] - arr[2] = 3 - 6 = -3
 #   arr[2] - arr[3] = 6 - 2 =  4
 for i in range(n - 1):
-    print(arr[i] - arr[i + 1])
+    print(int(arr[i]) - int(arr[i + 1]))
